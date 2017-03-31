@@ -69,7 +69,7 @@ h2, #font2 {
   /*font-family: 'Piedra', cursive;*/
 }
 
-#todo {
+#sitter {
   text-decoration: none;
   font-size: 18px;
 }
@@ -87,10 +87,6 @@ h2, #font2 {
   justify-content:space-around;
 }
 
-/*.clearfix {
-  overflow: auto;
-}*/
-
 #edit {
   float: left;
   margin: 3%;
@@ -102,11 +98,6 @@ h2, #font2 {
     width: 150px;
     float: left;
     margin: 5px;
-}
-
-.done-true {
-  text-decoration: line-through;
-  color: grey;
 }
 
 footer {

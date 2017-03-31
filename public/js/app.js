@@ -21,7 +21,6 @@
       });
 
     function addSitter(newSitter){
-      //call add done function if done was selected
       console.log("new sitter", newSitter);
       $http.post('/user/add-sitter', newSitter)
         .then(function(response){
