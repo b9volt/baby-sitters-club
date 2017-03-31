@@ -93,8 +93,7 @@ app.delete('/logout', function(req, res){
 
 //PORT LISTENER
 //=========================================
-app.listen(port, function() {
-    console.log('=======================');
-    console.log('RUNNING on PORT ' + port);
-    console.log('=======================');
-});
+app.listen(process.env.PORT || 3000 )
+  console.log('=======================');
+  console.log('RUNNING on PORT ' + port);
+  console.log('=======================');
