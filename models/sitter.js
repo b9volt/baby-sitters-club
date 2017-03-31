@@ -6,7 +6,7 @@ var SitterSchema = new Schema({
   age: Number,
   rate: Number,
   stars: Number,
-  comments: Text
+  comments: String,
 });
 
 

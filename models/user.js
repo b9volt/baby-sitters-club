@@ -7,7 +7,7 @@ var SitterSchema = require('./sitter.js').schema;
 var UserSchema = new Schema({
   username: String,
   password: String,
-  todoList: [TodoSchema],
+  sitterList: [SitterSchema],
   done: [SitterSchema]
 });
 
