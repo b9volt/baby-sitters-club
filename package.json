@@ -1,0 +1,38 @@
+{
+  "name": "baby-sitters-club",
+  "version": "1.0.0",
+  "description": "Baby Sitting App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b9volt/baby-sitters-club.git"
+  },
+  "author": "Brad Volts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b9volt/baby-sitters-club/issues"
+  },
+  "homepage": "https://github.com/b9volt/baby-sitters-club#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.2",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
+    "path": "^0.12.7",
+    "pry": "^0.6.6",
+    "pryjs": "^1.0.3"
+  },
+  "engines": {
+    "node": "6.3.1"
+  }
+}
