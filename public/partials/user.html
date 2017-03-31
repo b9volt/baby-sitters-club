@@ -1,0 +1,13 @@
+<h2 id="font1" ng-show="auth.isLoggedIn">{{main.user.username}}'s List
+<button class="btn btn-primary" ui-sref="add">Add</button></h2>
+  <div class="cover">
+    <a class="list" id="sitter"
+    ui-sref="edit({sitter:sitter})" ng-repeat="sitter in main.user.sitterList">
+      <div class='text'>Name: {{sitter.name}}</div>
+      <div class='text'>Age: {{sitter.age}}</div>
+      <div class='text'>Rate: {{sitter.rate}}</div>
+      <div class='text'>Stars: {{sitter.stars}}</div>
+      <div class='text'>Comments: {{sitter.comments}}</div>
+    </a>
+  </div>
+  <br>
