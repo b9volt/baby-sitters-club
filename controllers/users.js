@@ -6,7 +6,7 @@ var router = express.Router();
 //EXTERNAL FILES
 //======================================
 var User = require('../models/user');
-var Todo = require('../models/sitter').model;
+var Sitter = require('../models/sitter').model;
 var findSitterIndex = require('../public/js/logic.js');
 
 
@@ -45,11 +45,11 @@ router.put('/edit/:userid/:id', function(req, res){
   }, function(err, user){
     var sitterIndex = findSitterIndex(sitterId, user.sitterList);
 
-    user.sitterList[sitterIndex].description = req.body.name;
-    user.sitterList[sitterIndex].priority = req.body.age;
-    user.sitterList[sitterIndex].done = req.body.rate;
-    user.sitterList[sitterIndex].priority = req.body.stars;
-    user.sitterList[sitterIndex].done = req.body.comments;
+    user.sitterList[sitterIndex].name = req.body.name;
+    user.sitterList[sitterIndex].age = req.body.age;
+    user.sitterList[sitterIndex].rate = req.body.rate;
+    user.sitterList[sitterIndex].stars = req.body.stars;
+    user.sitterList[sitterIndex].comments = req.body.comments;
 
     user.save(function(err){
 
