@@ -1,6 +1,6 @@
 <div class="home" ng-repeat="sitter in main.sitters">
   <h2 id="font1">EDIT</h2>
-  <form ng-submit="main.addSitter(newSitter)" method="put">
+  <form ng-submit="main.editSitter(sitterToEdit)" method="put">
     <input ng-model="sitter.name" type="text" name="name" value="sitter" placeholder="name"><br><br>
     <input ng-model="sitter.age" type="number" name="age" value="sitter" placeholder="age"><br><br>
     <input ng-model="sitter.rate" type="number" name="rate" value="sitter" placeholder="rate"><br><br>
