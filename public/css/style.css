@@ -69,11 +69,12 @@ h2, #font2 {
   /*font-family: 'Piedra', cursive;*/
 }
 
-/*#profile {
+#profile {
   width: 20rem;
-  height: 50rem;
+  height: 20rem;
   background: red;
-}*/
+  margin: 1em;
+}
 
 #sitter {
   height: 300px;
