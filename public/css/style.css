@@ -1,5 +1,10 @@
-/*html,
-body,*/
+/*html {
+  background: url('http://i.imgur.com/iRCwjZx.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
 
 @viewport {
   zoom: 1.0;
@@ -7,20 +12,22 @@ body,*/
 }
 
 .cover {
-  background-image: url();
+  height: 100%;
+}
+
+.cover {
   background-size: cover;
   display: table;
   width: 100%;
-  height: 100%;
-  padding: 10% 20%;
+  padding: 0 10%;
   box-shadow: inset 0 0 100px #000;
 }
 
-.text {
-  font-family: 'Handlee', cursive;
+.profile {
   text-align: left;
-  color: #0c0c0e;
-  margin: 5%;
+  color: #333;
+  width: 20rem;
+  margin-bottom: 2em 1em;
 }
 
 header {
@@ -59,55 +66,44 @@ nav > button:hover {
 
 h2 {
   text-align-last: center;
-  text-transform:capitalize;
 }
 
 h2, #font1 {
   font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
 }
 h2, #font2 {
   /*font-family: 'Piedra', cursive;*/
 }
 
-#profile {
-  width: 20rem;
-  height: 20rem;
-  background: red;
-  margin: 1em;
-}
-
-#sitter {
-  height: 300px;
-  width: 300px;
-  background: red;
-  text-decoration: none;
-  font-size: 18px;
-}
-
 .home {
   text-align: center;
-  text-transform:capitalize;
+  text-transform: capitalize;
   margin: 5em 0;
 }
 
 .user {
   padding: 3em;
   display:flex;
-  justify-content:space-between;
-  justify-content:space-around;
+  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #edit {
   float: left;
   margin: 3%;
   padding-bottom: 3%;
-  display: inline-block;
+  display: inline;
 }
 
 .list {
-    width: 150px;
-    float: left;
-    margin: 5px;
+  text-decoration: none !important;
+  float: left;
+  margin: 10px;
+}
+
+.list:hover {
+  color: red;
 }
 
 footer {

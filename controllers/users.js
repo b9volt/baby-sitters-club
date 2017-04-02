@@ -10,7 +10,7 @@ var Sitter = require('../models/sitter').model;
 var findSitterIndex = require('../public/js/logic.js');
 
 
-// Adding a new todo
+// Adding a new sitter
 router.post('/add-sitter', function(req, res){
   console.log("new sitter", req.body);
   User.findOne({
@@ -36,7 +36,7 @@ router.post('/add-sitter', function(req, res){
   });
 });
 
-// Edit an existing sitter
+// Editing an existing sitter
 router.put('/edit/:userid/:id', function(req, res){
   var userId = req.params.userid;
   var sitterId = req.params.id;
@@ -61,10 +61,10 @@ router.put('/edit/:userid/:id', function(req, res){
   });
 });
 
-// Deleting a todo
+// Deleting a sitter
 router.delete('/delete/:userid/:id', function(req, res){
- var userId = req.params.userid;
- var sitterId = req.params.id;
+   var userId = req.params.userid;
+   var sitterId = req.params.id;
   User.findOne({
     _id: userId
   }, function(err, user){

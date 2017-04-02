@@ -48,7 +48,7 @@
       console.log("CURRENT SITTER TO EDIT >>>>>>>", sitter._id);
       $http.put('/user/edit/' + self.user._id + '/' + sitter._id, sitter)
         .then(function(response){
-          console.log( "SITTER HAS BEEN EDITED BY USER >>>>>>>>", response.data);
+          console.log("SITTER HAS BEEN EDITED BY USER >>>>>>>>", response.data);
           $state.go('user', {url: '/user'});
         })
         .catch(function(err){

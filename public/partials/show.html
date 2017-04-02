@@ -1,0 +1,30 @@
+<h2 id="font1" ng-show="auth.isLoggedIn">
+<button class="btn btn-primary" ui-sref="user">{{main.user.username}}'s List</button></h2>
+<div class="cover">
+  <a class="list" ui-sref="edit({sitter:sitter})" ng-repeat="sitter in main.user.sitterList">
+      <div class='profile'>Name: {{sitter.name}}</div>
+      <div class='profile'>Age: {{sitter.age}} years old</div>
+      <div class='profile'>Rate: ${{sitter.rate}} per hour</div>
+      <div class='profile'>Stars: {{sitter.stars}} stars</div>
+      <div class='profile'>Comments: {{sitter.comments}}</div>
+    <!-- <div class="card" style="width: 20rem;">
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">{{sitter.name}}</h4>
+          <p class="card-text">{{sitter.comments}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{sitter.age}} years old</li>
+          <li class="list-group-item">${{sitter.rate}} per hour</li>
+          <li class="list-group-item">{{sitter.stars}} stars</li>
+        </ul>
+        <div class="card-block">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div> -->
+  </a>
+</div>
+  <br>
