@@ -1,18 +1,20 @@
 <h3 class="greeting">Hello {{main.user.username}}</h3>
 <div class="home" ng-repeat="sitter in main.sitters">
   <h2 id="font1">EDIT</h2>
-  <form ng-submit="main.editSitter(sitterToEdit)" method="put">
-    <label for="name">Name</label><br>
-    <input ng-model="sitter.name" type="text" name="name" value="sitter" placeholder="name"><br><br>
-    <label for="age">Age</label><br>
-    <input ng-model="sitter.age" type="number" name="age" value="sitter" placeholder="age"><br><br>
-    <label for="rate">Rate</label><br>
-    <input ng-model="sitter.rate" type="number" name="rate" value="sitter" placeholder="rate"><br><br>
-    <label for="stars">Stars 1-5</label><br>
-    <input ng-model="sitter.stars" type="number" min="1" max="5" name="stars" value="1" ng-model="sitter.stars"><br><br>
-    <label for="comments">Comments</label><br>
-    <textarea ng-model="sitter.comments" type="text" name="comment" rows="5" cols="25" maxlength="150" value="sitter" placeholder="comments"></textarea><br>
-    <button class="btn btn-success" ui-sref="user" ng-click="main.editSitter(sitter)">Edit</button>
-    <button class="btn btn-danger" ui-sref="user" ng-click="main.deleteSitter( sitter._id)">Delete</button>
-  </form>
+  <div class="">
+    <form ng-submit="main.editSitter(sitterToEdit)" method="put">
+      <label for="name">Name</label><br>
+      <input ng-model="sitter.name" type="text" name="name" value="sitter" placeholder="name"><br><br>
+      <label for="age">Age</label><br>
+      <input ng-model="sitter.age" type="number" min="12" max="100" name="age" value="sitter" placeholder="age"><br><br>
+      <label for="rate">Rate</label><br>
+      <input ng-model="sitter.rate" type="number" min="1" max="100" name="rate" value="sitter" placeholder="rate"><br><br>
+      <label for="stars">Stars 1-5</label><br>
+      <input ng-model="sitter.stars" type="number" min="1" max="5" name="stars" value="1" ng-model="sitter.stars"><br><br>
+      <label for="comments">Comments</label><br>
+      <textarea ng-model="sitter.comments" type="text" name="comment" rows="5" cols="25" maxlength="150" value="sitter" placeholder="comments"></textarea><br>
+      <button class="btn btn-success" ui-sref="user" ng-click="main.editSitter(sitter)">Edit</button>
+      <button class="btn btn-danger" ui-sref="user" ng-click="main.deleteSitter( sitter._id)">Delete</button>
+    </form>
+  </div>
 </div>
