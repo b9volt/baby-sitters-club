@@ -1,28 +1,16 @@
-<h2 id="font1" ng-show="auth.isLoggedIn">{{main.user.username}}'s List
-<button class="btn btn-primary" ui-sref="add">Add</button></h2>
-<!-- <div class="cover">
+<h3 class="greeting">Hello {{main.user.username}}</h3>
+<div class="cover">
   <div class="card profile">
-    <a class="list"
-    ui-sref="edit({sitter:sitter})" ng-repeat="sitter in main.user.sitterList">
-    <div class="card-block">
-      <h4 class="card-title">{{sitter.name}}</h4>
-      <p class="card-text">{{sitter.comments}}</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{sitter.age}} years old</li>
-      <li class="list-group-item">${{sitter.rate}} per hour</li>
-      <li class="list-group-item">{{sitter.stars}} out of 5 stars</li>
-    </ul>
+    <a class="list" ui-sref="edit({sitter:sitter})" ng-repeat="sitter in main.user.sitterList">
+      <div class="card-block">
+        <h4 class="card-title">{{sitter.name}}</h4>
+        <p class="card-text textbox">{{sitter.comments}}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{sitter.age}} years old</li>
+        <li class="list-group-item">${{sitter.rate}} per hour</li>
+        <li class="list-group-item">{{sitter.stars}} out of 5 stars</li>
+      </ul>
     </a>
   </div>
-</div> -->
-
-<div class="cover">
-  <a class="list" ui-sref="edit({sitter:sitter})" ng-repeat="sitter in main.user.sitterList">
-    <div class='profile'>Name: {{sitter.name}}</div>
-    <div class='profile'>Age: {{sitter.age}} years old</div>
-    <div class='profile'>Rate: ${{sitter.rate}} per hour</div>
-    <div class='profile'>Stars: {{sitter.stars}} stars</div>
-    <div class='profile'>Comments: {{sitter.comments}}</div>
-  </a>
 </div>
