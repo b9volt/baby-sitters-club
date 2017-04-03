@@ -1,21 +1,11 @@
-/*html {
-  background: url('http://i.imgur.com/iRCwjZx.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
-
 @viewport {
   zoom: 1.0;
   width: device-width;
 }
 
 .greeting {
-  float: right;
-  margin-top: -120px;
-  margin-right: 18px;
-  color: #eee;
+  color: #0c0c0e;
+  padding: 1em;
 }
 
 .profile {
@@ -30,10 +20,6 @@
   padding: 7px;
 }
 
-.logo {
-
-}
-
 header {
   background-color: #0c0c0e;
   height: 130px;
@@ -44,7 +30,7 @@ header {
 nav {
   background: none;
   font-size: 24px;
-  float:right;
+  float: right;
   margin-top: 72px;
 }
 
@@ -68,10 +54,6 @@ nav > button:hover {
   color: #999;
 }
 
-/*h2 {
-  text-align-last: center;
-}*/
-
 h2, #font1 {
   font-family: 'Open Sans', sans-serif;
   text-transform: capitalize;
@@ -86,13 +68,6 @@ h3 {
   text-transform: capitalize;
 }
 
-#edit {
-  float: left;
-  margin: 3%;
-  padding-bottom: 3%;
-  display: inline;
-}
-
 .list {
   color: #0c0c0e;
   text-decoration: none !important;
@@ -102,7 +77,7 @@ h3 {
 }
 
 .list:hover {
-  color: red;
+  color: #999;
 }
 
 footer {
