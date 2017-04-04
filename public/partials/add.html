@@ -3,11 +3,11 @@
   <h2 id="font1">ADD SITTER</h2>
   <form ng-submit="main.addSitter(newSitter)" method="post">
     <input ng-model="newSitter.name" type="text" name="name" value="sitter" placeholder="name"><br><br>
+    <textarea ng-model="newSitter.comments" type="text" name="comment" rows="5" cols="25" maxlength="150" value="sitter" placeholder="comments"></textarea><br><br>
     <input ng-model="newSitter.age" type="number" min="12" max="100" name="age" value="sitter" placeholder="age"><br><br>
     <input ng-model="newSitter.rate" type="number" min="1" max="100" name="rate" value="sitter" placeholder="rate"><br><br>
     <label for="stars">Stars 1-5</label><br>
     <input ng-model="newSitter.stars" type="number" min="1" max="5" name="stars" value="1" ng-model="newSitter.stars"><br><br>
-    <textarea ng-model="newSitter.comments" type="text" name="comment" rows="5" cols="25" maxlength="150" value="sitter" placeholder="comments"></textarea><br>
     <button class="btn btn-primary" type="submit">Add New Sitter</button>
   </form>
 </div>

@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 @viewport {
   zoom: 1.0;
   width: device-width;
@@ -10,6 +14,16 @@
 
 .profile {
   color: #0c0c0e;
+  display: inline-block;
+  overflow: scroll;
+  display: table;
+}
+
+.cover {
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 10%;
 }
 
 .textbox {
@@ -66,13 +80,15 @@ h3 {
 .home {
   text-align: center;
   text-transform: capitalize;
+  width: 100vw;
+  height: 100vh;
 }
 
 .list {
   color: #0c0c0e;
   text-decoration: none !important;
   float: left;
-  margin: 20px;
+  margin: 10px 20px;
   width: 20rem;
 }
 
